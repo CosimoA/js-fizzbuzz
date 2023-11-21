@@ -16,11 +16,10 @@ for (var i = 1; i <= 100; i++) {
     } // Trova i numeri divisibili *3
     else if (i % 3 == 0) {
         console.log("Fizz");
-    } // Trova i numeri divisibili per 5
+    } // Trova i numeri divisibili *5
     else if (i % 5 == 0) {
         console.log("Buzz");
     } // Se i numeri non sono divisibili
     else console.log(i);
-
 }
 
