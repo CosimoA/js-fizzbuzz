@@ -11,7 +11,7 @@ for (var i = 1; i <= 105; i++) {
     // Creo div generico
     const box = document.createElement("div");
     // Assegno le classi al Box
-    box.classList.add("box", "text_center", "hidden");
+    box.classList.add("box", "text_center");
     // Inserisco il div nel Div container già esistente
     container.append(box);
     // Trova i numeri divisibile *3 e *5
@@ -19,16 +19,16 @@ for (var i = 1; i <= 105; i++) {
         box.classList.add("bg-4");
         box.append ("FizzBuzz");
         console.log("FizzBuzz");
+    } // Trova i numeri divisibili *5
+    else if (i % 5 == 0) {
+        box.classList.add("bg-3");
+        box.append("Buzz");
+        console.log("Buzz"); 
     } // Trova i numeri divisibili *3
     else if (i % 3 == 0) {
         box.classList.add("bg-2");
         box.append("Fizz");
         console.log("Fizz");
-    } // Trova i numeri divisibili *5
-    else if (i % 5 == 0) {
-        box.classList.add("bg-3");
-        box.append("Buzz");
-        console.log("Buzz");
     } // Se i numeri non sono divisibili
     else {
         box.classList.add("bg-1");
